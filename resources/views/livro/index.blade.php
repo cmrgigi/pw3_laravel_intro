@@ -31,7 +31,7 @@
         <ul>
             @foreach($livro as $livro)
                 <li>
-                    {{ $livro->nome }} - R$ {{ number_format($livro->ano_publicacao, 2, ',', '.') }} - autor: {{ $livro->autor }}
+                    {{ $livro->titulo }} - {{ number_format ($livro->ano_publicacao) }} - autor: {{ $livro->autor }}
                 </li>
             @endforeach
         </ul>

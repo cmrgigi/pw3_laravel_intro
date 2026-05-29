@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Livro;
 use Illuminate\Http\Request;
 
 class LivroController extends Controller
@@ -25,3 +26,4 @@ class LivroController extends Controller
         return redirect('/livro');
     }
 }
+
