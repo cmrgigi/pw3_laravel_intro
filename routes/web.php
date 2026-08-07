@@ -6,7 +6,7 @@ use App\Http\Controllers\LivroController;
 use App\Http\Controllers\OficinaController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/produtos', [ProdutoController::class, 'index']);
