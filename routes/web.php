@@ -12,7 +12,8 @@ Route::get('/', function () {
 });
 
 Route::view('/landing', 'landing');
-Route::view('/admin', 'admin.dashboard');
+
+Route::get('/admin', [UserController::class, 'index']);
 
 Route::get('/teste-orm', function () {
     User::create([
